@@ -24,7 +24,7 @@ const weapons = ['Rock' , 'Paper' , 'Scissors'];
 //game defaults
 const init = function(){
     userScoreE1.textContent = userScore;
-    customElementsE1.textContent = computerScore;
+    computerScoreE1.textContent = computerScore;
 };
 
 
@@ -43,7 +43,7 @@ const displayWeapons = function(){
         weaponE1.setAttribute('value',`${weapon}`);
 
         //we are inserting an image inside the button
-        weaponE1.innerHTML = `<img src = "assets/images/${weapon}.png" alt = "${weapon}"/>`;
+        weaponE1.innerHTML = `<img src = "./assets/images/${weapon}.png" alt = "${weapon}"/>`;
 
         //we are appending the element created in to weapons container
         weaponsContainer.appendChild(weaponE1);
